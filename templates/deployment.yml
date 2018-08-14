@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: prisma
-          image: 'prismagraphql/prisma:1.8'
+          image: 'prismagraphql/prisma:{{ .Values.prisma.image.tag }}'
           ports:
             - name: prisma
               containerPort: {{ .Values.prisma.port }}

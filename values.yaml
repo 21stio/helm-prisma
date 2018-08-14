@@ -1,6 +1,8 @@
 prisma:
   replicas: '1'
   port: '4466'
+  image:
+    tag: '1.13'
   database:
     connector: mysql
     host: mysql
